@@ -51,5 +51,5 @@ production:
   encoding: unicode
   database: noobninja_production
   pool: 5
-  username: jamilabreu
+  username: noobninja
   password:
