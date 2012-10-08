@@ -1,0 +1,75 @@
+#welcome
+	.container
+		.row
+			.info
+				.span4
+					.info-column.info-noob
+						.info-column-inner
+							.info-title Noob-Ninja
+							%ul
+								%li Have a very specific task or request like:
+								.question
+									%blockquote Walk me through the initial setup and structure of a Rails app using Backbone.js
+								.or OR
+								.question
+									%blockquote= "Show me how to recreate #{link_to 'this sticker effect', 'http://dribbble.com/shots/727181-YOLO?list=tags&tag=avatar', target: "_blank"} in Photoshop or Illustrator".html_safe
+								%li Pick the best offer from a sensei ($19 and up) for one-on-one help over Skype.
+						= link_to "Get Help", "#noob", :class => "info-button", :id => "info-button-noob"
+				.span4
+					.info-column.info-sensei
+						.info-column-inner
+							.info-title Sensei
+							%ul
+								%li Be an awesome hacker or designer with a strong portfolio.
+								%li Have patience, some spare time, Skype, and a knack for explaining things
+								%li Genuinely enjoy helping others hone their craft.
+								%li Perks include personal satisfaction, NN swag, supplemental income, and more!
+						= link_to "Give Help", "#sensei", :class => "info-button", :id => "info-button-sensei"
+	.controls
+		= link_to "#noob", :class => "controls-arrow", :id => "welcome-arrow-down" do
+			%i.icon-chevron-down
+	.contact
+		- mail_content = capture do
+			Contact&nbsp;&nbsp;
+			%i.icon-envelope-alt
+		= mail_to "sensei@noobninja.com", mail_content, :encode => "hex", :target => "_blank"
+#noob
+	.container
+		.row
+			.span8
+				.noob-inner
+					.noob-title
+						KEEP
+						= image_tag "ninja-red.png", :class => "ninja"
+						CALM
+					.noob-tagline THE SENSEI ARE GATHERING
+					= form_for Invite.new, remote: true do |f|
+						.error.noob-error
+						= f.text_area :email, :class => "field noob-invite-email", placeholder: "Email"
+						= f.submit "REQUEST INVITE", :class => "submit-button noob-button"
+						= render "layouts/follow"
+	.controls
+		= link_to "#header", :class => "controls-arrow", :id => "noob-arrow-up" do
+			%i.icon-chevron-up
+		= link_to "#sensei", :class => "controls-arrow", :id => "noob-arrow-down" do
+			%i.icon-chevron-down			
+#sensei
+	.container
+		.row
+			.span8
+				.sensei-inner
+					.sensei-title
+						OHAYO
+						= image_tag "ninja-green.png", :class => "ninja"
+						SENSEI
+					.sensei-tagline EXHIBIT YOUR MASTERY
+					= form_for Invite.new, remote: true do |f|
+						.error.sensei-error
+						= f.text_area :email, :class => "field sensei-invite-email", placeholder: "Email"
+						= f.text_area :background, :class => "field field-skills"
+						= f.hidden_field :sensei, { value: true }
+						= f.submit "REQUEST INVITE", :class => "submit-button sensei-button"
+						= render "layouts/follow"
+	.controls
+		= link_to "#noob", :class => "controls-arrow", :id => "sensei-arrow-up" do
+			%i.icon-chevron-up

@@ -1,0 +1,90 @@
+body { font-family: "proxima-nova",serif; font-size: 1.2em; font-weight: 400; font-smooth:always; 
+			 -webkit-font-smoothing: antialiased; background: #E1DAC1; }
+
+a, a:hover { text-decoration: none; }
+
+#header { font-family: "museo-slab",serif; background: #474746 url("dark-denim.png"); padding: 20px 0; text-align: center; }
+
+.container { }
+
+.logo { color: #FFF; font-size: 60px; font-weight: 100; }
+.logo span { font-weight: 600; }
+.ninja { width: 80px; }
+
+.tagline { font-weight: bold; padding: 12px 0; background: #222121 url("tire.png"); text-align: center; color: #888; }
+
+#welcome { position: relative; border-top: 1px solid #FFF; }
+
+.info { padding: 25px 0; }
+.info-column { background: #FFF; padding: 2px; @include border-radius(5px); text-align: center; }
+.info-column-inner { padding: 1px; border: 1px solid #E1DAC1; border-bottom: 0; @include border-radius(4px 4px 0 0); }
+.info-column ul { margin: 0 20px 30px 54px; font-size: .9em; text-align: left; }
+.info-column ul li { margin: 30px 0 0; list-style-type: hiragana; }
+
+.info-title { font-size: 1.3em; padding: 30px 0 0; }
+.info-button { display: block; color: #FFF; padding: 15px 20px; font-size: 1em; font-weight: 600; @include border-radius(4px); 
+							 text-align: center; }
+.info-button:hover { color: #FFF; }
+
+.info-noob { color: #E23C49; }
+.info-noob .info-title { }
+.info-noob .info-button { @include linear-gradient(#E23C49, #b3212c); }
+.info-noob .info-button:hover { background: #E23C49; }
+
+.question { color: #777; font-size: .8em; font-weight: bold; margin: 20px 0; position: relative; right: 15px; }
+.question a { color: #478F94; }
+
+.info-sensei { color: #478F94; }
+.info-sensei .info-title { }
+.info-sensei .info-button { @include linear-gradient(#69B2B8, #478F94); }
+.info-sensei .info-button:hover { background: #69B2B8; }
+
+.social-media { width: 60px; position: fixed; top: 10px; left: 10px; z-index: 1000; }
+.twitter-share-button { margin-bottom: 5px; }
+.twitter-follow-button { margin-top: 19px; visibility: hidden; }
+
+.contact { text-align: center; width: 100px; margin: 0 auto;  }
+.contact a { display: block; color: #aea37c; font-size: .9em; padding: 20px 0; }
+.contact i { position: relative; top: 1px; }
+
+#noob { position: relative; min-height: 500px; background: #E23C49; text-align: center; border-top: 1px solid #b3212c; border-bottom: 1px solid #b3212c; }
+.noob-inner { width: 480px; height: 300px; position: absolute; left: 50%; top: 50%; margin:-160px 0 0 -240px; text-align: center; }
+.noob-title { color: #b3212c; font-size: 70px; font-weight: 900; text-align: center; }
+.noob-tagline { color: #b3212c; margin: 18px auto 23px; text-align: center; }
+.noob-button { background: #b3212c; margin: 0 auto; text-align: center; }
+
+#sensei { position: relative; min-height: 660px; background: #478F94; text-align: center; }
+.sensei-inner { width: 620px; height: 510px; position: absolute; left: 50%; top: 50%; margin:-265px 0 0 -310px; text-align: center; }
+.sensei-title { color: #69B2B8; font-size: 70px; font-weight: 900; text-align: center; }
+.sensei-tagline { color: #69B2B8; margin: 18px auto 23px; text-align: center; }
+.sensei-button { background: #69B2B8; margin: 0 auto; text-align: center; }
+
+.error { color: white; display: none; }
+
+.controls { position: absolute; right: 10px; bottom: 10px; @include border-radius(5px); }
+.controls-arrow { display: inline-block; padding: 5px 11px; }
+.controls a { float: left; }
+.controls a i { color: #FFF; font-size: 25px; }
+
+#welcome .controls { background: #FFF; }
+#welcome .controls i { color: #E1DAC1; }
+#welcome-arrow-down { position: relative; top: 2px; }
+
+#noob .controls { background: #b3212c; }
+#noob .controls i { color: #E23C49; }
+#noob-arrow-up { border-right: 1px solid #E23C49; }
+#noob-arrow-down { position: relative; top: 2px; }
+
+#sensei .controls { background: #69B2B8; }
+#sensei .controls i { color: #478F94; }
+
+/* Forms */
+
+#new_invite { text-align: center; }
+#new_invite textarea { padding: 10px; height: 20px; width: 230px; font-size: 14px; margin-top: 2px; margin-bottom: 2px; 
+	resize: none; outline: none; border: 0; @include border-radius(0); }
+
+.field { display: block; margin: 0 auto; height: auto; }
+.field-skills { height: 200px !important; margin-top: 10px !important; }
+.submit-button { font-family: "museo-slab",serif; display: block; margin: 20px auto 0; padding: 12px 40px 10px; border: 0; @include border-radius(5px);
+								 color: #FFF; font-size: 1em; font-weight: bold; }

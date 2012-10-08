@@ -1,0 +1,10 @@
+<% if @invite.sensei == true %>
+	$('.sensei-button').css({background: "#BECC97", color: "#FFF", padding: "12px 20px"});
+	$('.sensei-button').val("RECIEVED. ARIGATO!");
+<% else %>
+	$('.noob-button').css({background: "#BECC97", color: "#FFF", padding: "12px 20px"});
+	$('.noob-button').val("RECIEVED. ARIGATO!");
+<% end %>
+	$('.noob-invite-email, .sensei-invite-email, #invite_background').val("");
+	$('.error').hide();
+	$('.twitter-follow-button').css({visibility: "visible"})
