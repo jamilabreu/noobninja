@@ -78,6 +78,10 @@ a, a:hover { text-decoration: none; }
 #sensei .controls { background: #69B2B8; }
 #sensei .controls i { color: #478F94; }
 
+.social-media { width: 60px; position: fixed; top: 10px; left: 10px; z-index: 1000; }
+.twitter-share-button { margin-bottom: 5px; }
+.twitter-follow-button { margin-top: 19px; visibility: hidden; }
+
 /* Forms */
 
 #new_invite { text-align: center; }
