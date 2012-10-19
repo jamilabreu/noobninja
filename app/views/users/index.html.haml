@@ -43,7 +43,7 @@
 						= image_tag "ninja-red.png", :class => "ninja"
 						CALM
 					.noob-tagline THE SENSEI ARE GATHERING
-					= form_for Invite.new, remote: true do |f|
+					= form_for @invite, remote: true do |f|
 						.error.noob-error
 						= f.text_area :email, :class => "field noob-invite-email", placeholder: "Email"
 						= f.submit "REQUEST INVITE", :class => "submit-button noob-button"
@@ -63,7 +63,7 @@
 						= image_tag "ninja-green.png", :class => "ninja"
 						SENSEI
 					.sensei-tagline EXHIBIT YOUR MASTERY
-					= form_for Invite.new, remote: true do |f|
+					= form_for @invite, remote: true do |f|
 						.error.sensei-error
 						= f.text_area :email, :class => "field sensei-invite-email", placeholder: "Email"
 						= f.text_area :background, :class => "field field-skills"

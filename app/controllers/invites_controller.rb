@@ -1,5 +1,7 @@
 class InvitesController < ApplicationController
-  
+  def index
+    redirect_to root_path
+  end
   def create
     @invite = Invite.new(params[:invite])
 
