@@ -7,8 +7,7 @@ class InvitesController < ApplicationController
         format.js
         format.html { redirect_to root_path }
       else
-        format.js { render :action => @invite.sensei == true ? 'sensei_error' : 'noob_error'  }
-        format.html { redirect_to root_path }      
+        format.js { render :action => @invite.sensei == true ? 'sensei_error' : 'noob_error'  }     
       end
     end    
   end
