@@ -1,4 +1,5 @@
 class InvitesController < ApplicationController
+  
   def create
     @invite = Invite.new(params[:invite])
 
@@ -7,7 +8,8 @@ class InvitesController < ApplicationController
         format.js
         format.html { redirect_to root_path }
       else
-        format.js { render :action => @invite.sensei == true ? 'sensei_error' : 'noob_error'  }     
+        format.js { render :action => @invite.sensei == true ? 'sensei_error' : 'noob_error'  }
+        format.html { redirect_to root_path }    
       end
     end    
   end
