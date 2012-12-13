@@ -1,9 +1,9 @@
-body { font-family: "proxima-nova",serif; font-size: 1.2em; font-weight: 400; font-smooth:always;
-			 -webkit-font-smoothing: antialiased; background: #E1DAC1; }
+body { font-family: "proxima-nova", $helvetica; font-size: 1.2em; font-weight: 400; font-smooth:always;
+			 -webkit-font-smoothing: antialiased; background: #E1DAC1 url("body.png"); }
 
 a, a:hover { text-decoration: none; }
 
-#header { font-family: "freight-sans-pro",serif; background: #474746 url("dark-denim.png"); padding: 20px 0; text-align: center; }
+#header { font-family: "estilo-regular", $helvetica; background: #474746 url("navy.png"); padding: 20px 0; text-align: center; }
 
 .container { }
 
