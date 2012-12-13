@@ -1,9 +1,9 @@
-body { font-family: "proxima-nova",serif; font-size: 1.2em; font-weight: 400; font-smooth:always; 
+body { font-family: "proxima-nova",serif; font-size: 1.2em; font-weight: 400; font-smooth:always;
 			 -webkit-font-smoothing: antialiased; background: #E1DAC1; }
 
 a, a:hover { text-decoration: none; }
 
-#header { font-family: "museo-slab",serif; background: #474746 url("dark-denim.png"); padding: 20px 0; text-align: center; }
+#header { font-family: "freight-sans-pro",serif; background: #474746 url("dark-denim.png"); padding: 20px 0; text-align: center; }
 
 .container { }
 
@@ -22,7 +22,7 @@ a, a:hover { text-decoration: none; }
 .info-column ul li { margin: 30px 0 0; list-style-type: hiragana; }
 
 .info-title { font-size: 1.3em; padding: 30px 0 0; }
-.info-button { display: block; color: #FFF; padding: 15px 20px; font-size: 1em; font-weight: 600; @include border-radius(4px); 
+.info-button { display: block; color: #FFF; padding: 15px 20px; font-size: 1em; font-weight: 600; @include border-radius(4px);
 							 text-align: center; }
 .info-button:hover { color: #FFF; }
 
@@ -85,7 +85,7 @@ a, a:hover { text-decoration: none; }
 /* Forms */
 
 #new_invite { text-align: center; }
-#new_invite textarea { padding: 10px; height: 20px; width: 230px; font-size: 14px; margin-top: 2px; margin-bottom: 2px; 
+#new_invite textarea { padding: 10px; height: 20px; width: 230px; font-size: 14px; margin-top: 2px; margin-bottom: 2px;
 	resize: none; outline: none; border: 0; @include border-radius(0); }
 
 .field { display: block; margin: 0 auto; height: auto; }
