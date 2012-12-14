@@ -90,5 +90,5 @@ a, a:hover { text-decoration: none; }
 
 .field { display: block; margin: 0 auto; height: auto; }
 .field-skills { height: 200px !important; margin-top: 10px !important; }
-.submit-button { font-family: "museo-slab",serif; display: block; margin: 20px auto 0; padding: 12px 40px 10px; border: 0; @include border-radius(5px);
+.submit-button { font-family: "estilo-regular", $helvetica; display: block; margin: 20px auto 0; padding: 12px 40px 10px; border: 0; @include border-radius(5px);
 								 color: #FFF; font-size: 1em; font-weight: bold; }
